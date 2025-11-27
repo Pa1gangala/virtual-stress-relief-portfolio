@@ -5,6 +5,7 @@
   <title>Virtual Stress Relief Nature Park - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio showcase of the Virtual Stress Relief Nature Park interactive Unity project.">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,15 +20,6 @@
       color: #fff;
       padding: 2.5rem 1rem;
       text-align: center;
-    }
-    header h1 {
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      margin-top: 0;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
     }
     nav {
       background-color: #ffffff;
@@ -50,9 +42,6 @@
       color: #333;
       font-size: 0.95rem;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
     main {
       max-width: 1000px;
       margin: 2rem auto;
@@ -65,70 +54,27 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
-    section h2 {
-      margin-top: 0;
-      margin-bottom: 0.75rem;
+    h2 {
       color: #2b5876;
+      margin-top: 0;
     }
     .two-col {
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      grid-template-columns: 1.3fr 1fr;
       gap: 1.5rem;
     }
     @media (max-width: 768px) {
       .two-col {
         grid-template-columns: 1fr;
       }
-      .screen-row {
-        grid-template-columns: 1fr;
-      }
     }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      padding-left: 0;
-      list-style: none;
-    }
-    .tag {
-      background-color: #e3e7ff;
-      color: #1c2553;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-    }
-    .video-placeholder {
+    .screenshot-placeholder, .video-placeholder {
       border: 2px dashed #bbb;
       border-radius: 8px;
       padding: 1rem;
       text-align: center;
-      font-size: 0.9rem;
       color: #666;
       background-color: #fafafa;
-    }
-    .screenshot-img,
-    .storyboard-img {
-      width: 100%;
-      max-width: 900px;
-      border-radius: 8px;
-    }
-    .screen-row {
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      align-items: start;
-    }
-    .screen-caption {
-      font-weight: bold;
-      margin-bottom: 0.25rem;
-    }
-    .small-text {
-      font-size: 0.85rem;
-      color: #555;
     }
     footer {
       text-align: center;
@@ -136,390 +82,212 @@
       font-size: 0.85rem;
       color: #666;
     }
-    a.button-link {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      background-color: #2b5876;
-      color: #fff;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    a.button-link:hover {
-      background-color: #223f55;
-    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Virtual Stress Relief Nature Park</h1>
   <p>
-    An interactive Unity experience where users reduce stress through simple, calming interactions
-    like picking apples and stacking cubes in a peaceful nature-inspired environment.
+    A calming Unity environment designed to help users reduce stress through simple interactions like
+    picking apples and stacking cubes inside a peaceful nature scene.
   </p>
   <p class="small-text">
-    Team: Pavan Kumar Goud • Charan Pasupuleti • Sai Gurram • Srikanth Gajula •
-    Mohammed Ghouse Syed • Sapna Devi
+    Team: Pavan Kumar Goud • Charan Pasupuleti • Sai Gurram • Srikanth Gajula • Mohammed Ghouse Syed • Sapna Devi
   </p>
 </header>
 
 <nav>
   <ul>
     <li><a href="#summary">Project Summary</a></li>
-    <li><a href="#visuals">Screenshots & Storyboard</a></li>
+    <li><a href="#visuals">Screenshots</a></li>
     <li><a href="#demo">Demo Video</a></li>
     <li><a href="#roles">Team Roles</a></li>
     <li><a href="#prototype">Final Prototype</a></li>
     <li><a href="#process">Process & Challenges</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
-    <li><a href="#references">References</a></li>
   </ul>
 </nav>
 
 <main>
 
-  <!-- 1. PROJECT SUMMARY (INTRODUCTION) -->
-  <section id="summary">
-    <h2>Project Summary (Introduction)</h2>
-    <div class="two-col">
-      <div>
-        <h3>Project Title</h3>
-        <p><strong>Virtual Stress Relief Nature Park</strong></p>
+<!-- 1. SUMMARY -->
+<section id="summary">
+  <h2>Project Summary</h2>
+  <div class="two-col">
+    <div>
+      <h3>Project Title</h3>
+      <p><strong>Virtual Stress Relief Nature Park</strong></p>
 
-        <h3>Objective</h3>
-        <p>
-          To create a short, hands-on stress relief experience where users can relax through light,
-          playful interaction instead of passive meditation. The project targets digital fatigue and
-          burnout by offering a calm space with simple tasks that are easy to understand and satisfying
-          to perform.
-        </p>
-
-        <h3>Target Audience</h3>
-        <ul>
-          <li>University and college students facing academic pressure</li>
-          <li>Software developers and remote workers with high screen time</li>
-          <li>People who find traditional meditation boring or hard to follow</li>
-          <li>New VR users who prefer simple, gentle interaction instead of complex games</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Key Features</h3>
-        <ul>
-          <li>Apple picking interaction using VR-style hand controllers</li>
-          <li>Physics-based cube stacking that feels natural and calming</li>
-          <li>Nature-inspired environment with soft lighting and ambient sound</li>
-          <li>Pressure-free experience with no scores, timers, or competitive elements</li>
-          <li>Low learning curve suitable for 2–5 minute mental breaks</li>
-        </ul>
-
-        <h3>Technologies Used</h3>
-        <ul class="tag-list">
-          <li class="tag">Unity 3D</li>
-          <li class="tag">C# Scripts</li>
-          <li class="tag">XR Interaction Toolkit</li>
-          <li class="tag">Blender / 3D Assets</li>
-          <li class="tag">OBS Studio / Screen Capture</li>
-          <li class="tag">GitHub (Version Control)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2. SCREENSHOTS & STORYBOARD (BODY – UX FLOW) -->
-  <section id="visuals">
-    <h2>Screenshots & Storyboard (User Flow)</h2>
-    <p class="small-text">
-      Each row represents a key storyboard moment. Screenshots on the left show the in-experience view,
-      and storyboard frames on the right communicate the intended user flow.  
-      <!-- NOTE: upload storyboard images such as storyboard-1.jpg, storyboard-2.jpg, etc. -->
-    </p>
-
-    <!-- ROW 1 -->
-    <div class="screen-row">
-      <div>
-        <p class="screen-caption">Screenshot 1 – Main Environment Overview</p>
-        <img class="screenshot-img"
-             src="images/main-environment.jpg"
-             alt="Main environment of the Virtual Stress Relief Nature Park">
-      </div>
-      <div>
-        <p class="screen-caption">Storyboard 1 – Entering the Calm Nature Space</p>
-        <!-- Replace placeholder with your storyboard image when ready -->
-        <img class="storyboard-img"
-             src="images/storyboard-1.jpg"
-             alt="Storyboard frame showing user entering the nature park (replace with actual storyboard image)">
-        <p class="small-text">
-          Placeholder: add your storyboard image (e.g., <code>images/storyboard-1.jpg</code>) so that
-          the right side matches the storyboard from your slide deck.
-        </p>
-      </div>
-    </div>
-
-    <!-- ROW 2 -->
-    <div class="screen-row">
-      <div>
-        <p class="screen-caption">Screenshot 2 – Apple Picking Interaction</p>
-        <img class="screenshot-img"
-             src="images/apple-picking.jpg"
-             alt="User picking apples from a tree in the scene">
-      </div>
-      <div>
-        <p class="screen-caption">Storyboard 2 – Reaching and Grabbing an Apple</p>
-        <img class="storyboard-img"
-             src="images/storyboard-2.jpg"
-             alt="Storyboard frame showing hand reaching toward an apple (replace with actual storyboard image)">
-        <p class="small-text">
-          Placeholder: update this with your apple-picking storyboard frame.
-        </p>
-      </div>
-    </div>
-
-    <!-- ROW 3 -->
-    <div class="screen-row">
-      <div>
-        <p class="screen-caption">Screenshot 3 – Cube Stacking Interaction</p>
-        <img class="screenshot-img"
-             src="images/cube-stacking.jpg"
-             alt="Cube stacking interaction in the scene">
-      </div>
-      <div>
-        <p class="screen-caption">Storyboard 3 – Building a Calm Stack</p>
-        <img class="storyboard-img"
-             src="images/storyboard-3.jpg"
-             alt="Storyboard frame showing cube stacking flow (replace with actual storyboard image)">
-        <p class="small-text">
-          Placeholder: update this with your storyboard slide that matches the cube stacking moment.
-        </p>
-      </div>
-    </div>
-
-    <!-- ROW 4 -->
-    <div class="screen-row">
-      <div>
-        <p class="screen-caption">Screenshot 4 – Spatial Layout & Environment Design</p>
-        <img class="screenshot-img"
-             src="images/layout-overview.jpg"
-             alt="Top-down or wide layout view of the scene">
-      </div>
-      <div>
-        <p class="screen-caption">Storyboard 4 – Exploring the Scene</p>
-        <img class="storyboard-img"
-             src="images/storyboard-4.jpg"
-             alt="Storyboard frame showing user moving through the layout (replace with actual storyboard image)">
-        <p class="small-text">
-          Placeholder: use this to connect your exploration storyboard with the live environment.
-        </p>
-      </div>
-    </div>
-
-    <!-- You can duplicate screen-row blocks to reach 6–8 screenshots total if you add more scenes. -->
-  </section>
-
-  <!-- 3. DEMO VIDEO (BODY – INTERACTIVE EXPERIENCE) -->
-  <section id="demo">
-    <h2>Demo Video (Full VR & Split-Screen)</h2>
-    <p>
-      Two formats are provided to communicate the experience clearly:
-      a full VR environment walkthrough, and a split-screen view showing the player and the in-headset
-      view side by side. Interactive elements are highlighted with captions in the videos.
-    </p>
-
-    <div class="video-placeholder">
-      <strong>Full VR Experience Demo</strong><br><br>
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/YtFcRGSHVQA?si=5BbGB5ldziRx_VRK"
-        title="Virtual Stress Relief Nature Park Demo – Full VR Experience"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-      <p class="small-text">
-        If the video does not load, open directly:
-        <a href="https://www.youtube.com/watch?v=YtFcRGSHVQA" target="_blank">
-          https://www.youtube.com/watch?v=YtFcRGSHVQA
-        </a>
+      <h3>Objective</h3>
+      <p>
+        To create a short stress-relief experience offering gentle interaction inside a nature-themed
+        environment. The goal is to help users take a 2–5 minute mental break without pressure, scores,
+        or complexity.
       </p>
+
+      <h3>Target Audience</h3>
+      <ul>
+        <li>University students dealing with academic stress</li>
+        <li>Developers & desk workers with digital fatigue</li>
+        <li>People who prefer hands-on relaxation over meditation</li>
+        <li>New VR users who need simple interactions</li>
+      </ul>
     </div>
 
-    <br>
+    <div>
+      <h3>Key Features</h3>
+      <ul>
+        <li>VR-style apple picking with natural hand-grab logic</li>
+        <li>Physics-based cube stacking for calming activity</li>
+        <li>Soft lighting and ambient environment design</li>
+        <li>User-friendly interaction with no learning curve</li>
+      </ul>
 
-    <div class="video-placeholder">
-      <strong>Split-Screen Demo – User & VR Environment</strong>
-      <p class="small-text">
-        Replace the iframe below with the unlisted YouTube link for your split-screen recording
-        showing the user on the right and the VR environment on the left.
-      </p>
-      <!-- TODO: replace VIDEO_ID_SPLIT with your actual YouTube video ID for the split-screen demo -->
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/VIDEO_ID_SPLIT"
-        title="Virtual Stress Relief Nature Park Demo – Split-Screen View"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-      <p class="small-text">
-        Example placeholder:
-        <code>https://www.youtube.com/watch?v=VIDEO_ID_SPLIT</code>
-      </p>
+      <h3>Technologies</h3>
+      <ul>
+        <li>Unity 3D</li>
+        <li>C# interaction scripts</li>
+        <li>XR Interaction Toolkit</li>
+        <li>OBS Studio (video capture)</li>
+        <li>GitHub version control</li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 4. TEAM ROLES -->
-  <section id="roles">
-    <h2>Team Roles & Contributions</h2>
 
-    <div class="two-col">
+<!-- 2. SCREENSHOTS -->
+<section id="visuals">
+  <h2>Screenshots & Visuals</h2>
 
-      <div>
-        <h3>Pavan Kumar Goud – Team Lead & Prototype Interaction Developer</h3>
-        <ul>
-          <li>Led overall team coordination, milestone planning, and project direction.</li>
-          <li>Developed interaction mechanics for apple picking and cube stacking using C# in Unity.</li>
-          <li>Integrated XR Interaction Toolkit and managed scene flow, physics, and interaction behavior.</li>
-          <li>Oversaw user testing, interaction polish, and build preparation.</li>
-          <li>Created the final portfolio presentation and structured the web-based portfolio layout.</li>
-        </ul>
-      </div>
+  <div>
+    <strong>Screenshot 1 – Main Environment Overview</strong><br>
+    <img src="images/main-environment.jpg" width="800">
+  </div>
 
-      <div>
-        <h3>Charan Pasupuleti – Camera Path & Scene Integration</h3>
-        <ul>
-          <li>Designed smooth camera walkthrough paths for the demo video.</li>
-          <li>Integrated all key environment elements into the Unity scene.</li>
-          <li>Assisted with lighting adjustments and environmental flow.</li>
-        </ul>
+  <br>
 
-        <h3>Sai Gurram – Environment & Spatial Designer</h3>
-        <ul>
-          <li>Designed terrain, foliage, trees, and the calming nature space layout.</li>
-          <li>Set mood lighting and environmental ambience for visual comfort.</li>
-          <li>Balanced space for user movement and object placement.</li>
-        </ul>
+  <div>
+    <strong>Screenshot 2 – Apple Picking Interaction</strong><br>
+    <img src="images/apple-picking.jpg" style="width:100%; max-width:900px; border-radius:8px;">
+  </div>
 
-        <h3>Srikanth Gajula – Asset Layout & Optimization</h3>
-        <ul>
-          <li>Placed interactive objects and ensured natural alignment within the scene.</li>
-          <li>Fine-tuned physics values for smooth interactions.</li>
-          <li>Optimized assets and scene performance to maintain stability.</li>
-        </ul>
+  <br>
 
-        <h3>Mohammed Ghouse Syed – Audio & Atmosphere Designer</h3>
-        <ul>
-          <li>Added natural ambient audio and environmental sound layers.</li>
-          <li>Balanced audio levels for a soothing user experience.</li>
-          <li>Synced minor sound cues with interactions and actions.</li>
-        </ul>
+  <div>
+    <strong>Screenshot 3 – Cube Stacking Interaction</strong><br>
+    <img src="images/cube-stacking.jpg" width="800">
+  </div>
 
-        <h3>Sapna Devi – Documentation File Preparation</h3>
-        <ul>
-          <li>Prepared the full project documentation file, including descriptions, structure, and written submission format.</li>
-        </ul>
-      </div>
+  <br>
 
+  <div>
+    <strong>Screenshot 4 – Spatial Layout & Environment Design</strong><br>
+    <img src="images/layout-overview.jpg" style="width:100%; max-width:900px; border-radius:8px;">
+  </div>
+</section>
+
+
+<!-- 3. DEMO VIDEO (FULL + SPLIT SCREEN) -->
+<section id="demo">
+  <h2>Demo Video (Full VR & Split-Screen)</h2>
+  <p>
+    The experience is presented in two formats to clearly show interaction, user flow, and movement:
+    a full VR walkthrough and a split-screen demo showing both the user and the VR environment.
+  </p>
+
+  <div class="video-placeholder">
+    <strong>Full VR Experience Demo</strong><br><br>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/YtFcRGSHVQA?si=5BbGB5ldziRx_VRK"
+      allowfullscreen></iframe>
+  </div>
+
+  <br>
+
+  <div class="video-placeholder">
+    <strong>Split-Screen Demo – User + VR Environment</strong><br><br>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/wW5IBVIu8J4?si=7ZdqbIdG71kmxhNZ"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+
+<!-- 4. TEAM ROLES -->
+<section id="roles">
+  <h2>Team Roles & Contributions</h2>
+  <div class="two-col">
+    <div>
+      <h3>Pavan Kumar Goud – Team Lead & Interaction Developer</h3>
+      <ul>
+        <li>Led the team and structured the full project workflow</li>
+        <li>Developed apple picking & cube stacking systems</li>
+        <li>Managed scene setup, physics tuning, and interactions</li>
+        <li>Oversaw user testing and final prototype polish</li>
+        <li>Created final portfolio layout and presentation</li>
+      </ul>
     </div>
-  </section>
 
-  <!-- 5. FINAL PROTOTYPE SHOWCASE -->
-  <section id="prototype">
-    <h2>Final Prototype Showcase</h2>
-    <p>
-      The final prototype is a fully functional, polished Unity scene that demonstrates:
-    </p>
-    <ul>
-      <li>Consistent apple picking with accurate hand interaction</li>
-      <li>Stable cube stacking with natural physics and minimal jitter</li>
-      <li>Smooth performance suitable for short VR-style sessions</li>
-      <li>A clean, uncluttered nature environment focused on relaxation</li>
-    </ul>
-    <p class="small-text">
-      You can include additional GIFs or short clips here to highlight specific interactions.
-      For example, a short loop of apple picking or the cube tower being built.
-    </p>
-    <div class="video-placeholder">
-      <strong>Optional: Short Interaction Clip</strong><br>
-      <p>PLACE GIF OR SHORT CLIP HERE (e.g., exported as a small MP4 or GIF and embedded).</p>
+    <div>
+      <h3>Charan Pasupuleti – Camera & Scene Integration</h3>
+      <ul><li>Created camera paths and assisted with scene lighting</li></ul>
+
+      <h3>Sai Gurram – Environment & Spatial Design</h3>
+      <ul><li>Designed terrain, trees, layout, and ambience</li></ul>
+
+      <h3>Srikanth Gajula – Asset Layout & Optimization</h3>
+      <ul><li>Adjusted placements and performance tuning</li></ul>
+
+      <h3>Mohammed Ghouse Syed – Audio & Atmosphere</h3>
+      <ul><li>Added ambient sound and balanced audio layers</li></ul>
+
+      <h3>Sapna Devi – Documentation Preparation</h3>
+      <ul><li>Prepared the written documentation file</li></ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 6. PROCESS, CHALLENGES & SOLUTIONS (BODY – DEVELOPMENT REFLECTION) -->
-  <section id="process">
-    <h2>Process, Challenges & Solutions</h2>
 
-    <h3>Design & Development Process</h3>
-    <ul>
-      <li><strong>Research:</strong> Reviewed existing relaxation and meditation apps to understand gaps in interaction and engagement.</li>
-      <li><strong>Ideation:</strong> Selected apple picking and cube stacking as low-pressure, tactile interactions that suit a calm experience.</li>
-      <li><strong>Prototyping:</strong> Built an initial Unity scene with basic grabbing mechanics and placeholder assets.</li>
-      <li><strong>Iteration:</strong> Improved lighting, physics, environment layout, and interaction timing based on feedback from peers and instructor.</li>
-      <li><strong>Polish:</strong> Optimized performance, refined object placement, balanced audio, and prepared the final demo build.</li>
-    </ul>
+<!-- 5. FINAL PROTOTYPE -->
+<section id="prototype">
+  <h2>Final Prototype Showcase</h2>
+  <p>A polished Unity scene demonstrating stable interaction, natural physics, and a visually calming environment.</p>
+  <div class="screenshot-placeholder">
+    <strong>Optional GIF (Apple Picking / Cube Stacking)</strong>
+  </div>
+</section>
 
-    <h3>Reflection on Key Challenges</h3>
-    <ul>
-      <li>
-        <strong>Interaction Accuracy:</strong> Early versions made grabbing apples inconsistent.  
-        We adjusted collider sizes, interaction distances, and XR grab settings until the interaction felt predictable and satisfying.
-      </li>
-      <li>
-        <strong>Cube Physics Stability:</strong> Stacks collapsed too easily and felt frustrating.  
-        We experimented with rigidbody mass, drag, and surface alignment to reach a balance between realism and stability.
-      </li>
-      <li>
-        <strong>Performance Drops:</strong> Extra objects and dynamic lights reduced frame rate in VR-style testing.  
-        We removed unnecessary props, baked lighting where possible, and simplified some meshes to keep the experience smooth.
-      </li>
-      <li>
-        <strong>User Comfort:</strong> Initial camera and player height caused minor discomfort during movement.  
-        We refined the XR rig height, limited sudden rotations, and kept the environment grounded and slow-paced.
-      </li>
-      <li>
-        <strong>Incorporating Feedback:</strong> Feedback from earlier checkpoints highlighted the need for clearer user flow and improved visibility of interactions.  
-        We responded by reworking the layout, adding clearer interaction zones, and enhancing the visual focus around apples and cubes.
-      </li>
-    </ul>
 
-    <h3>Future Improvements</h3>
-    <ul>
-      <li>Additional scenes such as a rainy forest, snowy field, or riverside area to support different moods.</li>
-      <li>Optional gentle guidance for first-time users (e.g., subtle prompts or a short introductory overlay).</li>
-      <li>Expanded platform support and input testing for different XR devices.</li>
-    </ul>
-  </section>
+<!-- 6. PROCESS & CHALLENGES -->
+<section id="process">
+  <h2>Process, Challenges & Solutions</h2>
 
-  <!-- 7. CONCLUSION -->
-  <section id="conclusion">
-    <h2>Conclusion</h2>
-    <p>
-      The Virtual Stress Relief Nature Park prototype demonstrates how small, intentional interactions in a calm environment
-      can provide a meaningful mental break for users who are overwhelmed by digital work. By focusing on apple picking and
-      cube stacking, the team created a simple but engaging flow that can be expanded into a full stress-relief product for
-      students, developers, and remote workers.
-    </p>
-    <p>
-      This project also allowed the team to practice an end-to-end process: from concept and storyboard, through interactive
-      prototyping in Unity, to a polished demo supported by video and documentation. The reflections on challenges and
-      improvements will inform future XR projects that aim to balance usability, comfort, and emotional impact.
-    </p>
-  </section>
+  <h3>Design & Development Process</h3>
+  <ul>
+    <li>Researched existing wellness and VR experiences</li>
+    <li>Selected interactions based on simplicity & relaxation</li>
+    <li>Prototyped main interaction loops</li>
+    <li>Improved lighting, physics, and layout after feedback</li>
+    <li>Polished visuals, movement, and stability</li>
+  </ul>
 
-  <!-- 8. REFERENCES -->
-  <section id="references">
-    <h2>References</h2>
-    <p class="small-text">
-      Use this section to list all third-party content (assets, sound, tools, readings, etc.) using the required citation style
-      (for example, APA). The items below are placeholders – replace them with your actual references.
-    </p>
-    <ul>
-      <li>[Add reference for Unity Asset Store or other 3D asset packs used in the scene]</li>
-      <li>[Add reference for ambient audio sources or sound libraries]</li>
-      <li>[Add reference for any tutorials, articles, or books that informed your design or implementation]</li>
-      <li>[Add course textbook or Moodle readings if they are directly cited in your write-up]</li>
-    </ul>
-  </section>
+  <h3>Key Challenges & Solutions</h3>
+  <ul>
+    <li><strong>Inconsistent grabbing:</strong> Resolved by adjusting colliders & XR settings</li>
+    <li><strong>Cube instability:</strong> Fixed with tuned rigidbody mass and surface friction</li>
+    <li><strong>Performance issues:</strong> Improved via baked lighting & asset optimization</li>
+    <li><strong>User comfort:</strong> Adjusted player height & limited rotation to reduce discomfort</li>
+  </ul>
+
+  <h3>Future Improvements</h3>
+  <ul>
+    <li>Additional nature environments</li>
+    <li>Guided relaxation instructions</li>
+    <li>Cross-platform support</li>
+  </ul>
+</section>
 
 </main>
 
