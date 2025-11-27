@@ -57,16 +57,6 @@
     h2 {
       color: #2b5876;
     }
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: 1.5rem;
-    }
-    @media (max-width: 768px) {
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-    }
     .screenshot-placeholder, .video-placeholder {
       border: 2px dashed #bbb;
       border-radius: 8px;
@@ -74,6 +64,7 @@
       text-align: center;
       color: #666;
       background-color: #fafafa;
+      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
@@ -88,13 +79,8 @@
 
 <header>
   <h1>Virtual Stress Relief Nature Park</h1>
-  <p>
-    A calming Unity environment designed to help users reduce stress through simple interactions like
-    picking apples and stacking cubes inside a peaceful nature scene.
-  </p>
-  <p class="small-text">
-    Team: Pavan Kumar Goud • Charan Pasupuleti • Sai Gurram • Srikanth Gajula • Mohammed Ghouse Syed • Sapna Devi
-  </p>
+  <p>A calming Unity experience that reduces stress through gentle interactions like apple picking and cube stacking in a peaceful nature environment.</p>
+  <p class="small-text">Team: Pavan Kumar Goud • Charan Pasupuleti • Sai Gurram • Srikanth Gajula • Mohammed Ghouse Syed • Sapna Devi</p>
 </header>
 
 <nav>
@@ -113,100 +99,78 @@
 
 <main>
 
-<!-- 1. SUMMARY -->
+<!-- SUMMARY -->
 <section id="summary">
   <h2>Project Summary</h2>
-  <div class="two-col">
-    <div>
-      <h3>Project Title</h3>
-      <p><strong>Virtual Stress Relief Nature Park</strong></p>
+  <p><strong>Virtual Stress Relief Nature Park</strong> is a short interactive Unity experience designed to help users relax through small, meaningful actions inside a nature-inspired environment.</p>
 
-      <h3>Objective</h3>
-      <p>
-        To create a short stress-relief experience offering gentle interaction inside a nature-themed
-        environment. The goal is to help users take a 2–5 minute mental break without pressure, scores,
-        or complexity.
-      </p>
+  <h3>Objective</h3>
+  <p>To provide a 2–5 minute relaxation escape using simple interactions instead of traditional meditation.</p>
 
-      <h3>Target Audience</h3>
-      <ul>
-        <li>University students dealing with academic stress</li>
-        <li>Developers & desk workers with digital fatigue</li>
-        <li>People who prefer hands-on relaxation over meditation</li>
-        <li>New VR users who need simple interactions</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>Key Features</h3>
-      <ul>
-        <li>VR-style apple picking</li>
-        <li>Physics-based cube stacking</li>
-        <li>Ambient nature environment</li>
-        <li>Beginner-friendly interaction</li>
-      </ul>
-
-      <h3>Technologies</h3>
-      <ul>
-        <li>Unity 3D</li>
-        <li>C# Scripts</li>
-        <li>XR Interaction Toolkit</li>
-        <li>OBS Studio</li>
-        <li>GitHub</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<!-- 2. SCREENSHOT GUIDELINES -->
-<section id="screenshots-guidelines">
-  <h2>Screenshot & Storyboard Alignment</h2>
+  <h3>Target Audience</h3>
   <ul>
-    <li>Screenshots (left) and storyboard frames (right) follow required layout</li>
-    <li>6–8 screenshots minimum</li>
-    <li>Clear UX and interaction flow shown</li>
+    <li>University students</li>
+    <li>Developers with digital fatigue</li>
+    <li>People seeking stress relief</li>
+    <li>Beginner VR users</li>
+  </ul>
+
+  <h3>Key Features</h3>
+  <ul>
+    <li>Apple picking interaction</li>
+    <li>Cube stacking mechanic</li>
+    <li>Nature-themed ambient environment</li>
+    <li>Beginner-friendly design</li>
+  </ul>
+
+  <h3>Technologies Used</h3>
+  <ul>
+    <li>Unity 3D</li>
+    <li>C# Scripting</li>
+    <li>XR Interaction Toolkit</li>
+    <li>OBS Studio</li>
+    <li>GitHub</li>
   </ul>
 </section>
 
+<!-- SCREENSHOT GUIDELINES -->
+<section id="screenshots-guidelines">
+  <h2>Screenshot & Storyboard Alignment</h2>
+  <ul>
+    <li>Screenshots on left, storyboard on right</li>
+    <li>6–8 screenshots minimum</li>
+    <li>Screens display user flow clearly</li>
+  </ul>
+</section>
 
-<!-- 3. STORYBOARD (ONLY UPLOAD SLOTS) -->
+<!-- STORYBOARD SECTION (ONLY ONE) -->
 <section id="storyboard">
   <h2>Storyboard</h2>
-  <p>Upload storyboard frames here as required by final assignment instructions.</p>
+  <p>Upload storyboard frames below as required for final project documentation.</p>
 
   <div class="screenshot-placeholder">
     <strong>Storyboard Frame 1</strong><br>
     <p>UPLOAD: storyboard-frame1.jpg</p>
   </div>
-  <br>
-
   <div class="screenshot-placeholder">
     <strong>Storyboard Frame 2</strong><br>
     <p>UPLOAD: storyboard-frame2.jpg</p>
   </div>
-  <br>
-
   <div class="screenshot-placeholder">
     <strong>Storyboard Frame 3</strong><br>
     <p>UPLOAD: storyboard-frame3.jpg</p>
   </div>
-  <br>
-
   <div class="screenshot-placeholder">
     <strong>Storyboard Frame 4</strong><br>
     <p>UPLOAD: storyboard-frame4.jpg</p>
   </div>
-  <br>
-
   <div class="screenshot-placeholder">
     <strong>Storyboard Frame 5</strong><br>
     <p>UPLOAD: storyboard-frame5.jpg</p>
   </div>
 </section>
 
-
-<!-- 4. SCREENSHOTS -->
+<!-- SCREENSHOTS -->
 <section id="visuals">
   <h2>Screenshots & Visuals</h2>
 
@@ -234,10 +198,9 @@
   </div>
 </section>
 
-
-<!-- 5. DEMO VIDEO -->
+<!-- DEMO VIDEO -->
 <section id="demo">
-  <h2>Demo Video (Full VR & Split-Screen)</h2>
+  <h2>Demo Video (Full VR & Split Screen)</h2>
 
   <div class="video-placeholder">
     <strong>Full VR Experience</strong><br><br>
@@ -256,17 +219,17 @@
   </div>
 </section>
 
-
-<!-- 6. TEAM ROLES -->
+<!-- TEAM ROLES -->
 <section id="roles">
   <h2>Team Roles & Contributions</h2>
   <div class="two-col">
+
     <div>
       <h3>Pavan Kumar Goud – Team Lead & Interaction Developer</h3>
       <ul>
-        <li>Led planning, coordination, and development</li>
-        <li>Built apple picking & cube stacking systems</li>
-        <li>Fixed physics, improved interactions</li>
+        <li>Led planning and development</li>
+        <li>Built interaction systems</li>
+        <li>Adjusted physics & scene flow</li>
         <li>Prepared final portfolio</li>
       </ul>
     </div>
@@ -275,93 +238,75 @@
       <h3>Charan Pasupuleti – Camera & Scene Integration</h3>
       <ul><li>Designed camera movement and lighting</li></ul>
 
-      <h3>Sai Gurram – Environment & Spatial Design</h3>
-      <ul><li>Built terrain, foliage, and layout</li></ul>
+      <h3>Sai Gurram – Environment Designer</h3>
+      <ul><li>Created terrain, layout, and foliage</li></ul>
 
-      <h3>Srikanth Gajula – Asset Layout & Optimization</h3>
-      <ul><li>Optimized scene performance</li></ul>
+      <h3>Srikanth Gajula – Optimization</h3>
+      <ul><li>Improved performance and asset placement</li></ul>
 
-      <h3>Mohammed Ghouse Syed – Audio Design</h3>
+      <h3>Mohammed Ghouse Syed – Audio</h3>
       <ul><li>Added ambient environmental audio</li></ul>
 
       <h3>Sapna Devi – Documentation</h3>
-      <ul><li>Created final written documentation</li></ul>
+      <ul><li>Prepared final written documentation</li></ul>
     </div>
+
   </div>
 </section>
 
-
-<!-- 7. PROTOTYPE -->
+<!-- FINAL PROTOTYPE -->
 <section id="prototype">
   <h2>Final Prototype Showcase</h2>
-  <p>Final polished Unity prototype showing stable interactions and calming environment design.</p>
+  <p>Fully polished Unity prototype featuring stable physics, optimized performance, and final visuals.</p>
   <div class="screenshot-placeholder">
-    <strong>Optional GIF (Add if needed)</strong>
+    <strong>Optional GIF Placeholder</strong>
   </div>
 </section>
 
-
-<!-- 8. PROCESS & CHALLENGES -->
+<!-- PROCESS -->
 <section id="process">
   <h2>Process, Challenges & Solutions</h2>
 
   <h3>Process</h3>
   <ul>
     <li>Planned interaction flow</li>
-    <li>Built main mechanics</li>
-    <li>Improved lighting and sound</li>
-    <li>Applied instructor feedback</li>
+    <li>Built prototype mechanics</li>
+    <li>Refined lighting and ambiance</li>
+    <li>Adjusted based on feedback</li>
   </ul>
 
   <h3>Challenges & Solutions</h3>
   <ul>
-    <li>Grabbing issues → fixed colliders & grab offsets</li>
-    <li>Cube instability → tuned physics values</li>
-    <li>Performance issues → baked lighting</li>
-    <li>User comfort → camera stabilization</li>
+    <li>Grabbing issues → fixed collider & offsets</li>
+    <li>Cube instability → physics tuning</li>
+    <li>Performance drops → optimization & baked lighting</li>
+    <li>User comfort issues → camera stabilization</li>
   </ul>
 </section>
 
-
-<!-- 9. REFERENCES -->
+<!-- REFERENCES -->
 <section id="references">
   <h2>References</h2>
 
   <ul>
-    <li>
-      Unity Asset Store Publisher 6266. (2023). <em>WOC City Building Park – Lite Pack</em>.  
-      https://assetstore.unity.com/packages/3d/environments/urban/woc-city-building-park-lite-free-pack-310639
-    </li>
+    <li>Unity Asset Store Publisher 6266. (2023). <em>WOC City Building Park – Lite Pack</em>.  
+      https://assetstore.unity.com/packages/3d/environments/urban/woc-city-building-park-lite-free-pack-310639</li>
 
-    <li>
-      TDG Studio. (2023). <em>TDG Storage Solutions</em>.  
-      https://assetstore.unity.com/packages/3d/props/tdg-storage-solutions-252198
-    </li>
+    <li>TDG Studio. (2023). <em>TDG Storage Solutions</em>.  
+      https://assetstore.unity.com/packages/3d/props/tdg-storage-solutions-252198</li>
 
-    <li>
-      Wooden Fence Outdoor Pack. (2023). <em>Wooden Fence/Garden Modular Pack</em>.  
-      https://assetstore.unity.com/packages/3d/props/exterior/wooden-fence-garden-modular-outdoor-prop-297507
-    </li>
+    <li>Wooden Fence Pack. (2023). <em>Wooden Fence/Garden Modular Outdoor Prop</em>.  
+      https://assetstore.unity.com/packages/3d/props/exterior/wooden-fence-garden-modular-outdoor-prop-297507</li>
 
-    <li>
-      Nature Free Environment Pack. (2023). <em>Lowpoly Nature – Medieval Fantasy Series</em>.  
-      https://assetstore.unity.com/packages/3d/environments/lowpoly-environment-nature-free-medieval-fantasy-series-187052
-    </li>
+    <li>Lowpoly Nature Pack. (2023). <em>Medieval Fantasy Series</em>.  
+      https://assetstore.unity.com/packages/3d/environments/lowpoly-environment-nature-free-medieval-fantasy-series-187052</li>
 
-    <li>
-      YouTube. (2025). <em>Full VR Experience – Virtual Stress Relief Nature Park</em>.  
-      https://www.youtube.com/watch?v=YtFcRGSHVQA
-    </li>
+    <li>YouTube. (2025). <em>Full VR Experience</em>.  
+      https://www.youtube.com/watch?v=YtFcRGSHVQA</li>
 
-    <li>
-      YouTube. (2025). <em>Split-Screen Demo – Virtual Stress Relief Nature Park</em>.  
-      https://www.youtube.com/watch?v=wW5IBVIu8J4
-    </li>
+    <li>YouTube. (2025). <em>Split-Screen Demo</em>.  
+      https://www.youtube.com/watch?v=wW5IBVIu8J4</li>
   </ul>
-
-  <p class="small-text">
-    All gameplay footage, UX work, and design elements were produced by the development team unless credited.
-  </p>
 </section>
 
 </main>
